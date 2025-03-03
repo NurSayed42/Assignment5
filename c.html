@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen" id="mainBody">
+    <div class="w-full mx-[100px] p-6">
+        <!-- Header -->
+        <header class="flex justify-between items-center bg-white p-4 rounded-lg shadow-md">
+            <div class="flex items-center space-x-2">
+                <div class="w-[51.24px] h-[51.24px]"><img src="./assets/logo.png" alt=""></div>
+                <h1 class="text-[35.67px]  text-gray-900">Dev<span class="text-black text-[35.67px] font-bold">Board</span></h1>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-2 bg-[#F4F7FF] text-white px-3 py-1 rounded-full">
+                    
+                    <span class=""><img src="./assets/checkbox.png" alt=""></span>
+                    <span id="taskCount" class="text-[#1E1E1E] font-bold text-[32px]">23</span>
+                </div>
+                <button id="colorChangeBtn" class="w-8 h-8 rounded-full border-2 border-gray-300 flex items-center justify-center">
+                    <img src="./assets/theme-btn.png" alt="">
+                </button>
+            </div>
+        </header>
+       
+        <!-- Main Section -->
+        
+
+        <!-- Content Layout -->
+        <div class="grid grid-cols-4 gap-6 mt-6">
+            <span class="col-span-3 bg-white ">
+                <div class="bg-white p-6 rounded-lg  flex justify-between items-center rounded-lg">
+                    <span class="flex bg-[#F4F7FF] justify-center items-center py-[17px] rounded-lg  pr-[13px]">
+                        <span class=" bg-white rounded-full p-4 m-4">  <img class="" src="./assets/checkbox.png" alt=""></span>
+                        <span class="text-lg font-medium "> Task Assigned <br> <span class="text-[32px] font-bold px-3 py-1 rounded-full" id="assignedTasks">5</span></span>
+                    </span>
+                    <span class="bg-blue-500  w-[450px] h-[128px] flex items-center justify-start rounded-lg">
+                        <img class="w-[56px] h-[64px] m-8" src="./assets/board.png" alt="">
+                        <button class="text-white text-[24px] rounded-lg font-medium " id="discoverBtn">Discover Something <br> New Today!</button>
+
+                    </span>
+                    <span class="flex bg-[#F4F7FF] justify-center items-center py-[17px] rounded-lg  pr-[13px]">
+                        <span class=" bg-white rounded-full p-4 m-4">  <img class="" src="./assets/calender.png" alt=""></span>
+                        <span class="text-lg font-medium ">Wed, <br> Jul 28 2025</span>
+                    </span>
+                </div>
+                <!-- Task Cards -->
+                <div class=" grid grid-cols-3 gap-6 mt-6 rounded-lg" id="taskContainer">
+                    <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
+                        <span class="bg-white py-2 px-4 rounded-lg">ShopEase</span>
+                        <h2 class="text-lg font-bold m-4">Fix Mobile Button Issue </h2>
+                        <p class="text-gray-500 mt-2 p-4 bg-white">Store the user's preference in <br>localStorage, update CSS vari..</p>
+                        <span class="flex justify-between">
+                            <p class="text-sm  mt-4 "><span class="text-gray-500">Deadline</span><br>21 March 2025</p>
+                            <button class="bg-blue-500 text-white px-6 py-2 rounded-lg mt-3 complete-btn">Completed</button>
+                        </span>
+                    </div>
+                    <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
+                        <span class="bg-white py-2 px-4 rounded-lg">CloudSync</span>
+                        <h2 class="text-lg font-bold m-4">Add Dark Mode</h2>
+                        <p class="text-gray-500 mt-2 p-4 bg-white">Store the user's preference in <br>localStorage, update CSS vari..</p>
+                        <span class="flex justify-between">
+                            <p class="text-sm mt-4"><span class="text-gray-500">Deadline</span><br>21 March 2025</p>
+                            <button class="bg-blue-500 text-white px-6 py-2 rounded-lg mt-3 complete-btn">Completed</button>
+                        </span>
+                    </div>
+                    <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
+                        <span class="bg-white py-2 px-4 rounded-lg">SwiftPay</span>
+                        <h2 class="text-lg font-bold m-4">Debug using Chrome </h2>
+                        <p class="text-gray-500 mt-2 p-4 bg-white">Debug using Chrome <br>DevTools, check for ..</p>
+                        <span class="flex justify-between">
+                            <p class="text-sm mt-4"><span class="text-gray-500">Deadline</span><br>21 March 2025</p>
+                            <button class="bg-blue-500 text-white px-6 py-2 rounded-lg mt-3 complete-btn">Completed</button>
+                        </span>
+                    </div>
+                    <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
+                        <span class="bg-white py-2 px-4 rounded-lg">Meta</span>
+                        <h2 class="text-lg font-bold m-4">Add new emoji 🤲</h2>
+                        <p class="text-gray-500 mt-2 p-4 bg-white">Debug using Chrome <br>DevTools, check for overlappin</p>
+                        <span class="flex justify-between">
+                            <p class="text-sm mt-4"><span class="text-gray-500">Deadline</span><br>21 March 2025</p>
+                            <button class="bg-blue-500 text-white px-6 py-2 rounded-lg mt-3 complete-btn">Completed</button>
+                        </span>
+                    </div>
+                    <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
+                        <span class="bg-white py-2 px-4 rounded-lg">Google LLC</span>
+                        <h2 class="text-lg font-bold m-4">Integrate OpenAI API </h2>
+                        <p class="text-gray-500 mt-2 p-4 bg-white">Debug using Chrome <br>DevTools, check for overlappin</p>
+                        <span class="flex justify-between">
+                            <p class="text-sm mt-4"><span class="text-gray-500">Deadline</span><br>21 March 2025</p>
+                            <button class="bg-blue-500 text-white px-6 py-2 rounded-lg mt-3 complete-btn">Completed</button>
+                        </span>
+                    </div>
+                    <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
+                        <span class="bg-white py-2 px-4 rounded-lg">Glassdoar</span>
+                        <h2 class="text-lg font-bold m-4">Improve Job searching </h2>
+                        <p class="text-gray-500 mt-2 p-4 bg-white">Debug using Chrome <br>DevTools, check for overlappin</p>
+                        <span class="flex justify-between">
+                            <p class="text-sm mt-4"><span class="text-gray-500">Deadline</span><br>21 March 2025</p>
+                            <button class="bg-blue-500 text-white px-6 py-2 rounded-lg mt-3 complete-btn">Completed</button>
+                        </span>
+                    </div>        
+                </div>
+            </span>
+           
+
+            <!-- Activity Log Sidebar -->
+            <aside class="col-span-1 bg-white p-6 rounded-lg shadow-md h-full">
+                <div class=" justify-between  ">
+                    <span class="items-center flex items-center justify-center "><img src="./assets/activity.png" alt=""><h3 class="text-lg font-medium mx-3">Activity Log</h3></span>
+                    <span class="items-center justify-center "><button id="clearHistory" class="bg-blue-500 text-white px-6 py-2 rounded-lg  complete-btn mx-14 mt-4">Clear History</button></span>
+                </div>
+                <div id="activityLog" class="mt-4 text-gray-500"></div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="./c.js">
+       
+
+    </script>
+    <script>
+        document.getElementById("discoverBtn").addEventListener("click", function() {
+            window.location.href = "blog.html"; // Redirect to blog page
+        });
+    </script>
+    
+</body>
+</html>

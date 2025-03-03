@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - DevBoard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center p-6">
+    <div class="w-full max-w-5xl bg-white p-6 rounded-lg shadow-lg">
+        <header class="flex justify-between items-center border-b pb-4">
+            <div class="flex items-center space-x-2">
+                <div class="w-[51.24px] h-[51.24px]"><img src="./assets/logo.png" alt=""></div>
+                <h1 class="text-[35.67px] text-gray-900">Dev<span class="text-black text-[35.67px] font-bold">Board</span></h1>
+            </div>
+            <button onclick="goBack()" class="bg-blue-500 text-white px-6 py-2 rounded-lg">
+                Back to Desk
+            </button>
+        </header>
+
+        <h2 class="text-2xl font-bold mt-6 text-center">Blogs</h2>
+
+        <div class="  my-4">
+            <h3 class="font-bold my-1 bg-gray-100  p-4 rounded-lg">Question-1: What are the different ways to select an element in the DOM?</h3>
+            <p class="text-gray-600 bg-gray-100  p-4 rounded-lg">DOM element select করার জন্য আমরা `getElementById()`, `querySelector()`, `getElementsByClassName()` ইত্যাদি ব্যবহার করি।</p>
+        </div>
+        <div class="my-4">
+            <h3 class="font-bold my-1 bg-gray-100  p-4 rounded-l">Question-2: What is the difference between innerHTML, innerText, and textContent?</h3>
+            <p class="text-gray-600 bg-gray-100  p-4 rounded-lg">`innerHTML` HTML parse করে, `innerText` visible text দেয়, আর `textContent` সব text return করে।</p>
+        </div>
+        <div class="my-4">
+            <h3 class="font-bold my-1 bg-gray-100  p-4 rounded-l">Question-3: What is event delegation in the DOM?</h3>
+            <p class="text-gray-600 bg-gray-100  p-4 rounded-lg">Parent element এ event listener set করে তার child elements এর event handle করাকে event delegation বলে।</p>
+        </div>
+        <div class="my-4">
+            <h3 class="font-bold my-1 bg-gray-100  p-4 rounded-l">Question-4: What is event bubbling in the DOM?</h3>
+            <p class="text-gray-600 bg-gray-100  p-4 rounded-lg">Event bubbling মানে, child থেকে parent element পর্যন্ত event propagate হওয়া।</p>
+        </div>
+        
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "c.html"; 
+        }
+    </script>
+</body>
+</html>
